@@ -18,7 +18,7 @@ def outcomeScore:
   elif .[0] == "C" and .[1] == "Z" then # Scissors, Win
     1 + 6
   else
-    -1
+    error("Invalid rock/paper/scissors")
   end;
 
 [inputs] | map(split(" ")) | map(outcomeScore) | add

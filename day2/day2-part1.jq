@@ -16,7 +16,7 @@ def outcomeScore:
   elif .[0] == "C" and .[1] == "Y" then # Scissors, Paper
     0
   else
-    -1
+    error("Invalid rock/paper/scissors")
   end;
 def score:
   [outcomeScore, (.[1] | shapeScore)] | add;
